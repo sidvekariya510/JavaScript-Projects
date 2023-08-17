@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>task 1</h1>
+    <div id="demo">Date Time</div>
+    <Script>
+        document.getElementById('demo').innerHTML = Date();
+    </Script>
+    <br>
+
+    <h1>task 2</h1>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">ON</button>
+    <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">OFF</button>
+
+    <br>
+    <br>
+    <h1>task 3</h1>
+    <script>
+        var a = 0;
+        while (a < 10) {
+            document.write("Hello");
+            a++;
+        }
+    </script>
+    <br>
+    <h1>task 4</h1>
+    <script>
+        // while loop.....if condtion is wrong then it wont print the results.
+        var a = 0;
+        var x = 10;
+        var y = 20;
+        var z = x + y;
+        var br = '<br>'
+
+        while (a < 10) {
+            document.write("Value="
+                + z + br);
+            a++;
+        }
+    </script>
+    <br>
+    <script>
+        var a=0;
+        var x=5;
+        var y=2;
+        var br='<br>'
+
+        while (a<1) {
+            document.write('Value='+(x*y)+br);
+            a++;
+        }
+    </script>
+    <br>
+
+    <h1>task 5</h1>
+    <script>
+        // do while loop... if condtion is wrong then also it will run one time atleast
+        var a = 0;
+        do {
+            document.write("Siddharth");
+            a++;
+        } while (a < 0);
+
+
+    </script>
+    <br>
+    
+
+
+</body>
+
+</html>
