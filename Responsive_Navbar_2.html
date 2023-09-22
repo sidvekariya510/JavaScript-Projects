@@ -18,17 +18,6 @@
             box-sizing: border-box;
         }
 
-        .container {
-            width: 100%;
-            height: 100%;
-            border: 1px solid black;
-        }
-
-        .innercontainer {
-            background-color: #ffffff;
-            color: black;
-        }
-
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -91,9 +80,8 @@
                 position: fixed;
                 top: 80px;
                 width: 100%;
-                height: 300px;
                 transform: translateY(-10px);
-                /* transition: 1s all ease-in; */
+                transition: 2s;
             }
 
             .shutter .ul {
@@ -122,35 +110,31 @@
 </head>
 
 <body>
-    <div class="Container">
-        <div class="innercontainer">
-            <nav class="navbar">
-                <div class="h3">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/014/604/020/small/girl-happy-face-cartoon-cute-png.png"
-                        alt="" width="50px">
-                </div>
-                <div class="links">
-                    <ul class="ul">
-                        <li><a href="#" target="">Home</a></li>
-                        <li><a href="#" target="">Projects</a></li>
-                        <li><a href="#" target="">About </a></li>
-                        <li><a href="#" target="">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="hamburger">
-                    <i class="fa-solid fa-bars on" id="menu" onclick="shutter()"></i>
-                </div>
-                <div class="shutter">
-                    <ul class="ul">
-                        <li><a href="#" target="">Home</a></li>
-                        <li><a href="#" target="">Projects</a></li>
-                        <li><a href="#" target="">About </a></li>
-                        <li><a href="#" target="">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <nav class="navbar">
+        <div class="h3">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/014/604/020/small/girl-happy-face-cartoon-cute-png.png"
+                alt="" width="50px">
         </div>
-    </div>
+        <div class="links">
+            <ul class="ul">
+                <li><a href="#" target="">Home</a></li>
+                <li><a href="#" target="">Projects</a></li>
+                <li><a href="#" target="">About </a></li>
+                <li><a href="#" target="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars on" id="menu" onclick="shutter()"></i>
+        </div>
+        <div class="shutter">
+            <ul class="ul">
+                <li><a href="#" target="">Home</a></li>
+                <li><a href="#" target="">Projects</a></li>
+                <li><a href="#" target="">About </a></li>
+                <li><a href="#" target="">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- javascript -->
     <script>
@@ -162,12 +146,8 @@
 
             } else {
                 x.style.display = "flex";
-
             }
         }
-
-
-
 
     </script>
 </body>
