@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet App</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #1d242c;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .cntr {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #c7eeff;
+            width: 100%;
+        }
+
+        .cntr h2 {
+            text-align: center;
+            background: #1d242c;
+            color: #c7eeff;
+            padding: 10px 0;
+            border-radius: 12px;
+        }
+
+        table {
+            margin: auto;
+            border: 2px solid #1d242c;
+        }
+
+        td,
+        th {
+            padding: 12px;
+            border: 2px solid #1d242c;
+            text-align: center;
+        }
+
+        th {
+            background: #0176c3;
+            color: #fafafa;
+        }
+
+        td input {
+            background: #c7eeff;
+            color: #1d242c;
+            border: none;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main container-fluid">
+        <div class="cntr">
+            <h2>Marksheet</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Maths</th>
+                        <th>Science</th>
+                        <th>English</th>
+                        <th>Total</th>
+                    <tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Maya</td>
+                        <td><input type="number" onchange="Total1()" id="S1_Maths"></td>
+                        <td><input type="number" onchange="Total1()" id="S1_Sci"></td>
+                        <td><input type="number" onchange="Total1()" id="S1_Eng"></td>
+                        <td class="total1"></td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Bhumi</td>
+                        <td><input type="number" onchange="Total2()" id="S2_Maths"></td>
+                        <td><input type="number" onchange="Total2()" id="S2_Sci"></td>
+                        <td><input type="number" onchange="Total2()" id="S2_Eng"></td>
+                        <td class="total2"></td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Jay</td>
+                        <td><input type="number" onchange="Total3()" id="S3_Maths"></td>
+                        <td><input type="number" onchange="Total3()" id="S3_Sci"></td>
+                        <td><input type="number" onchange="Total3()" id="S3_Eng"></td>
+                        <td class="total3"></td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Parth</td>
+                        <td><input type="number" onchange="Total4()" id="S4_Maths"></td>
+                        <td><input type="number" onchange="Total4()" id="S4_Sci"></td>
+                        <td><input type="number" onchange="Total4()" id="S4_Eng"></td>
+                        <td class="total4"></td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>Sid</td>
+                        <td><input type="number" onchange="Total5()" id="S5_Maths"></td>
+                        <td><input type="number" onchange="Total5()" id="S5_Sci"></td>
+                        <td><input type="number" onchange="Total5()" id="S5_Eng"></td>
+                        <td class="total5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript File -->
+    <script src="Project_MarksheetApp.js"></script>
+</body>
+
+</html>
